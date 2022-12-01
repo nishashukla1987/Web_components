@@ -8,8 +8,9 @@ window.addEventListener('load', () => {
 
 async function getNews() {
   const res = await fetch(topHeadlinesUrl);
+  console.log("res##",res);
   const json = await res.json();
-
+  console.log("json##",json);
   const main = document.querySelector('main');
   console.log("main##",main);
   json.articles.forEach(article => {
