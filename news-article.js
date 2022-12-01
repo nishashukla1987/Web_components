@@ -27,7 +27,7 @@ class NewsArticle extends HTMLElement {
         </style>
 
         <div class="div-box">
-            <a href="Web_components/${article.url}">
+            <a href="${article.url}">
                 <h2>${article.title}</h2>
                 <img src="${article.urlToImage ? article.urlToImage : ''}">
                 <p>${article.description ? article.description : '' }</p>
