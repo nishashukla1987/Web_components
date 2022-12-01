@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Learning web components</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <title>Welcome to Todays News!</title>
+</head>
 
-    <body>
-        <div class="container">
-            <h1 >Welcome to Profile view!</h1>
-            <user-card name="Nisha shukla" avatar="/image/women.avif">
-                <div slot="email">nisha@gmail.com</div>
-                <div slot="phone">5655-456-59855</div>
-                <div slot="address">Neuss</div>
-            </user-card>
-    
-            <user-card name="Tom Markus" avatar="/image/man.avif">
-                <div slot="email">tom@gmail.com</div>
-                <div slot="phone">3653-634-7865</div>
-                <div slot="address">USA</div>
-            </user-card>
-        </div>
-        <script src="userCard.js"></script>
-    </body>
+<body>
+    <h1>Welcome to Profile view!</h1>
+    <user-card name="Sara" avatar="/image/woman.jpeg">
+        <div slot="email">sara@gmail.com</div>
+        <div slot="phone">5655-456-59855</div>
+        <div slot="address">Neuss</div>
+    </user-card>
+
+    <user-card name="Tom Markus" avatar="/image/man.jpeg">
+        <div slot="email">tom@gmail.com</div>
+        <div slot="phone">3653-634-7865</div>
+        <div slot="address">USA</div>
+    </user-card>
+
+
+    <h1>Welcome to Todays News!</h1>
+
+    <main></main>
+    <script src="./index.js" type="module"></script>
+    <script src="./userCard.js"></script>
+</body>
 
 </html>
