@@ -3,7 +3,7 @@ import './news-article.js';
 
 window.addEventListener('load', () => {
   getNews();
-  registerSW();
+ // registerSW();
 });
 
 async function getNews() {
@@ -17,7 +17,7 @@ async function getNews() {
     console.log("main##",main);
     json.articles.forEach(article => {
     const el = document.createElement('news-article');
-    console.log("el##",el);
+    console.log("earticlel##",article);
     el.article = article;
       main.appendChild(el);
     });
