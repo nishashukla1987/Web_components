@@ -4,11 +4,11 @@ template.innerHTML = `
     .user-card {
         font-family: 'Arial', sans-serif;
         background: #f4f4f4;
-        width: 500px;
+        width: 800px;
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-gap: 10px;
-        // margin-left: 65px;
+        margin: 0 auto;
         margin-bottom: 15px;
         border: lightblue 5px solid;
     }
